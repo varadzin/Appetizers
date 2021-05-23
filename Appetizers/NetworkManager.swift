@@ -41,7 +41,9 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let decodedResponse = try decoder.decode(AppetizerResponse.self, from: data)
+                let decodedResponse = decoder.decode(AppetizerResponse, from: data)
+                    
+                   
                 completed(.success(decodedResponse.request))
                 
             } catch {
@@ -49,7 +51,7 @@ final class NetworkManager {
             }
             
             }
-        
+        task.resume()
     }
     
 }

@@ -15,6 +15,9 @@
 		099EAFAA265964BE005656EC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFA9265964BE005656EC /* AccountView.swift */; };
 		099EAFAC265964D4005656EC /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFAB265964D4005656EC /* OrderView.swift */; };
 		099EAFAE265A39D4005656EC /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFAD265A39D3005656EC /* Appetizer.swift */; };
+		099EAFB0265A486B005656EC /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFAF265A486B005656EC /* AppetizerListCell.swift */; };
+		099EAFB2265A8902005656EC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB1265A8901005656EC /* NetworkManager.swift */; };
+		099EAFB4265A89D0005656EC /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB3265A89D0005656EC /* APError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		099EAFA9265964BE005656EC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		099EAFAB265964D4005656EC /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		099EAFAD265A39D3005656EC /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		099EAFAF265A486B005656EC /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		099EAFB1265A8901005656EC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		099EAFB3265A89D0005656EC /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				099EAFA9265964BE005656EC /* AccountView.swift */,
 				099EAFAB265964D4005656EC /* OrderView.swift */,
 				099EAFAD265A39D3005656EC /* Appetizer.swift */,
+				099EAFAF265A486B005656EC /* AppetizerListCell.swift */,
+				099EAFB1265A8901005656EC /* NetworkManager.swift */,
+				099EAFB3265A89D0005656EC /* APError.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -151,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				099EAFAE265A39D4005656EC /* Appetizer.swift in Sources */,
+				099EAFB4265A89D0005656EC /* APError.swift in Sources */,
+				099EAFB0265A486B005656EC /* AppetizerListCell.swift in Sources */,
 				099EAFAA265964BE005656EC /* AccountView.swift in Sources */,
 				099EAF9B26596355005656EC /* AppetizerTabView.swift in Sources */,
+				099EAFB2265A8902005656EC /* NetworkManager.swift in Sources */,
 				099EAF9926596355005656EC /* AppetizersApp.swift in Sources */,
 				099EAFA8265964AE005656EC /* AppetizerListView.swift in Sources */,
 				099EAFAC265964D4005656EC /* OrderView.swift in Sources */,

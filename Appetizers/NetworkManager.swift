@@ -23,8 +23,8 @@ final class NetworkManager {
             return
         }
         
-        let task = URLSession.shared.dataTask(with: URLRequest (url: url))  { data, response, error in
-            guard let _ = error else {
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url))  { data, response, error in
+            if let _ = error  {
                 completed(.failure(.unableToComplete))
                 return
             }
@@ -41,7 +41,7 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let decodedResponse = decoder.decode(AppetizerResponse, from: data)
+                let decodedResponse = try decoder.decode(AppetizerResponse.self, from: data)
                     
                    
                 completed(.success(decodedResponse.request))

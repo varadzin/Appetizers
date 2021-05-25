@@ -20,6 +20,7 @@
 		099EAFB4265A89D0005656EC /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB3265A89D0005656EC /* APError.swift */; };
 		099EAFB6265BF4CD005656EC /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB5265BF4CC005656EC /* AppetizerListViewModel.swift */; };
 		099EAFB8265BFFCA005656EC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB7265BFFCA005656EC /* Alert.swift */; };
+		099EAFBA265D669B005656EC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB9265D669B005656EC /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		099EAFB3265A89D0005656EC /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		099EAFB5265BF4CC005656EC /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		099EAFB7265BFFCA005656EC /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		099EAFB9265D669B005656EC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				099EAFB3265A89D0005656EC /* APError.swift */,
 				099EAFB5265BF4CC005656EC /* AppetizerListViewModel.swift */,
 				099EAFB7265BFFCA005656EC /* Alert.swift */,
+				099EAFB9265D669B005656EC /* LoadingView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				099EAFAE265A39D4005656EC /* Appetizer.swift in Sources */,
 				099EAFB4265A89D0005656EC /* APError.swift in Sources */,
+				099EAFBA265D669B005656EC /* LoadingView.swift in Sources */,
 				099EAFB0265A486B005656EC /* AppetizerListCell.swift in Sources */,
 				099EAFAA265964BE005656EC /* AccountView.swift in Sources */,
 				099EAF9B26596355005656EC /* AppetizerTabView.swift in Sources */,

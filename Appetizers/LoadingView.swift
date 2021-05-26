@@ -19,7 +19,4 @@ struct ActivityIndicator: UIViewRepresentable {
     
     
     
-    typealias UIViewType = UIActivityIndicatorView()
-    
-        
-}
+ 

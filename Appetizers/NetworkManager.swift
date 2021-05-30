@@ -57,7 +57,17 @@ final class NetworkManager {
     }
     
     func downloadImage(fromURLString urlString: String, completed: @escaping(UIImage?) -> Void ) {
-        let cacheKey = NSString(string: fromURLString)
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completed(image)
+            return
+        }
+        
+        guard let url  = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
         
         
     }

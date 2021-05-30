@@ -13,6 +13,9 @@ struct AppetizerListView: View {
    
     
     var body: some View {
+        ZStack {
+            
+        
         NavigationView {
             List(viewModel.appetizers) { appetizer in
             AppetizerListCell(appetizer: appetizer)
@@ -21,6 +24,12 @@ struct AppetizerListView: View {
             
         }.onAppear {
             viewModel.getAppetizers()
+            
+        }
+            
+            if viewModel.isLoading {
+                LoadinView()
+            }
             
         }
         .alert(item: $viewModel.alertItem) { alertItem in

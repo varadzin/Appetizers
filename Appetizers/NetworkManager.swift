@@ -69,8 +69,19 @@ final class NetworkManager {
             return
         }
         
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, respones, error in
         
+        guard let data = data, let image = UIImage(data: data) else {
+            completed(nil)
+            return
+        }
+        
+        self.cache.setObject(image, forKey: cacheKey)
+        completed(image)
+    
     }
     
+        task.resume()
     
+}
 }

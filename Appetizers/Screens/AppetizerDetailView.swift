@@ -13,10 +13,14 @@ struct AppetizerDetailView: View {
     
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Image("asian-flank-steak")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 225)
+            
                 
         }
-        .frame(width: 320, height: 525)
+        .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 40

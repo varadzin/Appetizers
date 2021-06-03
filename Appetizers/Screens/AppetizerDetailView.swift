@@ -19,7 +19,13 @@ struct AppetizerDetailView: View {
                 .frame(width: 300, height: 225)
             
             VStack {
-                Text("Title")
+                Text(appetizer.name)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                
+                Text(appetizer.description)
+                multilineTextAlignment(.center)
+                    .font(.body)
             }
             
             Spacer()

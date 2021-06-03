@@ -18,7 +18,18 @@ struct AppetizerDetailView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             
-                
+            VStack {
+                Text("Title")
+            }
+            
+            Spacer()
+            
+            Button {
+                print("tapped")
+            } label: {
+                Text("Button")
+            }
+            .padding(.bottom, 30)
         }
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))

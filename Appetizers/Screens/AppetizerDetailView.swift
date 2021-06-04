@@ -28,6 +28,20 @@ struct AppetizerDetailView: View {
                     .font(.body)
             }
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             Spacer()
             
             Button {

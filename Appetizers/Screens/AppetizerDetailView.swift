@@ -30,18 +30,6 @@ struct AppetizerDetailView: View {
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             Spacer()
             
             Button {

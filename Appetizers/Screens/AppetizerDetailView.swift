@@ -26,6 +26,22 @@ struct AppetizerDetailView: View {
                 Text(appetizer.description)
                 multilineTextAlignment(.center)
                     .font(.body)
+                    .padding()
+                
+                HStack {
+                    VStack {
+                        Text("Calories")
+                            .bold()
+                            .font(.caption)
+                        
+                        Text("\(appetizer.calories)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                        
+                        
+                    }
+                }
             }
             
             

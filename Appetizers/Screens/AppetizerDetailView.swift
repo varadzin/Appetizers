@@ -28,9 +28,9 @@ struct AppetizerDetailView: View {
                     .font(.body)
                     .padding()
                 
-                HStack {
-                    VStack {
-                        Text("Calories")
+                HStack(spacing: 40) {
+                    VStack(spacing: 5) {
+                            Text("Calories")
                             .bold()
                             .font(.caption)
                         
@@ -39,8 +39,32 @@ struct AppetizerDetailView: View {
                             .fontWeight(.semibold)
                             .italic()
                         
+                    }
+                    VStack(spacing: 5) {
+                            Text("Carbs")
+                            .bold()
+                            .font(.caption)
+                        
+                        Text("\(appetizer.carbs)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
                         
                     }
+                    
+                    VStack(spacing: 5) {
+                            Text("Protein")
+                            .bold()
+                            .font(.caption)
+                        
+                        Text("\(appetizer.protein)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                        
+                    }
+                
+                
                 }
             }
             
@@ -52,6 +76,9 @@ struct AppetizerDetailView: View {
                 print("tapped")
             } label: {
                 Text("Button")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .frame(width: 260, height: 50)
             }
             .padding(.bottom, 30)
         }

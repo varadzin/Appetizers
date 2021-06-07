@@ -79,6 +79,10 @@ struct AppetizerDetailView: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .frame(width: 260, height: 50)
+                    .foregroundColor(.white)
+                    .background(Color.brandPrimary)
+                    .cornerRadius(10)
+                
             }
             .padding(.bottom, 30)
         }

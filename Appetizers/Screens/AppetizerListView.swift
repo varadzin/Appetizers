@@ -11,6 +11,7 @@ struct AppetizerListView: View {
     
     @StateObject var viewModel = AppetizerListViewModel()
    @State private var isShowingDetail = false
+    @State private var selectedAppetizer : Appetizer?
     
     
     var body: some View {
@@ -21,17 +22,22 @@ struct AppetizerListView: View {
             List(viewModel.appetizers) { appetizer in
             AppetizerListCell(appetizer: appetizer)
                 .onTapGesture {
+                    selectedAppetizer = appetizer
                     isShowingDetail = true
                 }
                 
             }.navigationTitle("Appetizers")
+            .disabled(isShowingDetail)
             
         }.onAppear {
             viewModel.getAppetizers()
             
         }
+        .blur(radius: isShowingDetail ? 20 : 0) //ak je hodnota premennej isShowingDetail true tak da BLUR 20 ak  false tak BLUR je 0
+            
             if isShowingDetail {
-                AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+                AppetizerDetailView(appetizer: selectedAppetizer!,
+                                    isShowingDetail: $isShowingDetail)
             }
             
             if viewModel.isLoading {

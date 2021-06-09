@@ -24,7 +24,7 @@ struct AppetizerDetailView: View {
                     .fontWeight(.semibold)
                 
                 Text(appetizer.description)
-                multilineTextAlignment(.center)
+                    .multilineTextAlignment(.center)
                     .font(.body)
                     .padding()
                 

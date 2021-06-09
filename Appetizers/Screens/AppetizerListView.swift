@@ -30,6 +30,9 @@ struct AppetizerListView: View {
             viewModel.getAppetizers()
             
         }
+            if isShowingDetail {
+                AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+            }
             
             if viewModel.isLoading {
                 LoadinView()

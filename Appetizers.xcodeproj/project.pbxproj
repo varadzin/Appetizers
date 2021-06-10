@@ -21,6 +21,8 @@
 		099EAFB6265BF4CD005656EC /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB5265BF4CC005656EC /* AppetizerListViewModel.swift */; };
 		099EAFB8265BFFCA005656EC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB7265BFFCA005656EC /* Alert.swift */; };
 		099EAFBA265D669B005656EC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAFB9265D669B005656EC /* LoadingView.swift */; };
+		09A309F12672A8D80048EEFC /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A309F02672A8D80048EEFC /* APButton.swift */; };
+		09A309F32672AA000048EEFC /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A309F22672AA000048EEFC /* XDismissButton.swift */; };
 		09C8FD252663D8120067A2B7 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8FD242663D8120067A2B7 /* Color+Ext.swift */; };
 		09C8FD27266551ED0067A2B7 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8FD26266551ED0067A2B7 /* RemoteImage.swift */; };
 		09C8FD362665661A0067A2B7 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8FD352665661A0067A2B7 /* AppetizerDetailView.swift */; };
@@ -43,6 +45,8 @@
 		099EAFB5265BF4CC005656EC /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		099EAFB7265BFFCA005656EC /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		099EAFB9265D669B005656EC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		09A309F02672A8D80048EEFC /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		09A309F22672AA000048EEFC /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		09C8FD242663D8120067A2B7 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		09C8FD26266551ED0067A2B7 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		09C8FD352665661A0067A2B7 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
@@ -97,6 +101,15 @@
 				099EAF9F2659635B005656EC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09A309EF2672A8B60048EEFC /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				09A309F02672A8D80048EEFC /* APButton.swift */,
+				09A309F22672AA000048EEFC /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		09C8FD2826655F9E0067A2B7 /* Screens */ = {
@@ -181,6 +194,7 @@
 		09C8FD31266560F60067A2B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				09A309EF2672A8B60048EEFC /* Buttons */,
 				09C8FD34266561320067A2B7 /* Image */,
 				09C8FD33266561200067A2B7 /* Cells */,
 				09C8FD32266561090067A2B7 /* UIKit Components */,
@@ -283,10 +297,12 @@
 			files = (
 				099EAFAE265A39D4005656EC /* Appetizer.swift in Sources */,
 				099EAFB4265A89D0005656EC /* APError.swift in Sources */,
+				09A309F32672AA000048EEFC /* XDismissButton.swift in Sources */,
 				099EAFBA265D669B005656EC /* LoadingView.swift in Sources */,
 				099EAFB0265A486B005656EC /* AppetizerListCell.swift in Sources */,
 				09C8FD252663D8120067A2B7 /* Color+Ext.swift in Sources */,
 				099EAFAA265964BE005656EC /* AccountView.swift in Sources */,
+				09A309F12672A8D80048EEFC /* APButton.swift in Sources */,
 				099EAF9B26596355005656EC /* AppetizerTabView.swift in Sources */,
 				099EAFB2265A8902005656EC /* NetworkManager.swift in Sources */,
 				099EAFB6265BF4CD005656EC /* AppetizerListViewModel.swift in Sources */,

@@ -34,20 +34,9 @@ struct AppetizerDetailView: View {
                     NutritionInfo(title: "Carbs", value: appetizer.carbs)
                     NutritionInfo(title: "Protein", value: appetizer.protein )
                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                 }
             }
-            
-            
-            
+                        
             Spacer()
             
             Button {

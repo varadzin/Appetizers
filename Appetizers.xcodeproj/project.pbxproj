@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0974327C2675F63C00BCE8A8 /* AccoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */; };
 		099EAF9926596355005656EC /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAF9826596355005656EC /* AppetizersApp.swift */; };
 		099EAF9B26596355005656EC /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAF9A26596355005656EC /* AppetizerTabView.swift */; };
 		099EAF9D2659635B005656EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099EAF9C2659635B005656EC /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutViewModel.swift; sourceTree = "<group>"; };
 		099EAF9526596355005656EC /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099EAF9826596355005656EC /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		099EAF9A26596355005656EC /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				099EAFA9265964BE005656EC /* AccountView.swift */,
+				0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				099EAFB4265A89D0005656EC /* APError.swift in Sources */,
 				09A309F32672AA000048EEFC /* XDismissButton.swift in Sources */,
 				099EAFBA265D669B005656EC /* LoadingView.swift in Sources */,
+				0974327C2675F63C00BCE8A8 /* AccoutViewModel.swift in Sources */,
 				099EAFB0265A486B005656EC /* AppetizerListCell.swift in Sources */,
 				09C8FD252663D8120067A2B7 /* Color+Ext.swift in Sources */,
 				099EAFAA265964BE005656EC /* AccountView.swift in Sources */,

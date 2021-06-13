@@ -16,4 +16,22 @@ final class AccoutViewModel: ObservableObject {
 @Published var extraNapkins = false
 @Published var frequentRefills = false
 
+    var isValidForm: Bool {
+        guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+            
+            return false
+        }
+        
+        guard email.isValidEmail else {
+            
+            return false
+        }
+        
+        return true
+        
+    }
+    
+    
+    
+    
 }

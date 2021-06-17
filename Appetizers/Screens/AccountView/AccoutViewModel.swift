@@ -9,8 +9,27 @@ import SwiftUI
 
 final class AccoutViewModel: ObservableObject {
     
+    @AppStorage("user") private var userData: Data?
     @Published var user = User()
     @Published var alertItem: AlertItem?
+    
+    func saveChanges() {
+        guard isValidForm else { return }
+   
+        do {
+            let data = try JSONEncoder().encode(user)
+            userData = data
+            alertItem = AlertContext.userSaveSuccess
+        } catch {
+            alertItem = AlertContext.invalidUserData
+        }
+        
+    }
+    
+    func retrieveUser() {
+        
+        
+    }
     
     
     var isValidForm: Bool {
@@ -28,10 +47,7 @@ final class AccoutViewModel: ObservableObject {
         
     }
     
-    func saveChanges() {
-        guard isValidForm else { return }
-        print("Changes have been saved")
-    }
+   
     
     
     

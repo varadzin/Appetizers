@@ -12,19 +12,7 @@ final class AccoutViewModel: ObservableObject {
     @AppStorage("user") private var userData: Data?
     @Published var user = User()
     @Published var alertItem: AlertItem?
-    
-    
-    
-    khiuguygygyh
-    ;kiohuihuhui
-    [ojij
-    ]
-    
-    
-    
-    
-    
-    
+   
     
     func saveChanges() {
         guard isValidForm else { return }

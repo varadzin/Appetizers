@@ -10,7 +10,14 @@ import SwiftUI
 struct OrderView: View {
     var body: some View {
         NavigationView {
-        Text("Order View")
+            VStack {
+                List {
+                    ForEach(MockData.orderItems) { appetizer in
+                        AppetizerListCell(appetizer: appetizer)
+                    }
+                }
+                .listStyle(InsetGroupedListStyle())
+            }
             .navigationTitle("Order")
         }
     }

@@ -13,16 +13,16 @@ struct OrderView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            ZStack {
+                VStack {
+            
                 List {
-                    ForEach(MockData.orderItems) { appetizer in
+                    ForEach(orderItems) { appetizer in
                         AppetizerListCell(appetizer: appetizer)
                     }
-                    .onDelete(perform: { indexSet in
-                        orderItems.remove(atOffsets: indexSet)
-                    })
+                    .onDelete(perform: deleteItems)
                 }
-                .listStyle(InsetGroupedListStyle())
+                .listStyle(PlainListStyle())
                 
                 
                 Button {
@@ -32,9 +32,22 @@ struct OrderView: View {
                 }
                 .padding(.bottom, 25)
             }
-            .navigationTitle("Order")
+                
+                if orderItems.isEmpty {
+                    EmptyState(imageName: "empty-order",
+                               message: "You have no Order")
+                }
+            }
+            
+            .navigationTitle("Orders")
         }
     }
+    
+    
+    func deleteItems(at offsets: IndexSet) {
+        orderItems.remove(atOffsets: offsets)
+    }
+    
 }
 
 struct OrderView_Previews: PreviewProvider {

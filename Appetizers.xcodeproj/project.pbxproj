@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		093B49A0267BD68B003D9F3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B499F267BD68B003D9F3A /* User.swift */; };
+		093B49A3267FE328003D9F3A /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B49A2267FE328003D9F3A /* EmptyState.swift */; };
 		0974327C2675F63C00BCE8A8 /* AccoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */; };
 		0974327E267622FE00BCE8A8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974327D267622FE00BCE8A8 /* String+Ext.swift */; };
 		099EAF9926596355005656EC /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAF9826596355005656EC /* AppetizersApp.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		093B499F267BD68B003D9F3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		093B49A2267FE328003D9F3A /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutViewModel.swift; sourceTree = "<group>"; };
 		0974327D267622FE00BCE8A8 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		099EAF9526596355005656EC /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		093B49A1267FE30D003D9F3A /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				093B49A2267FE328003D9F3A /* EmptyState.swift */,
+			);
+			path = "Empty States";
+			sourceTree = "<group>";
+		};
 		099EAF8C26596354005656EC = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		09C8FD31266560F60067A2B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				093B49A1267FE30D003D9F3A /* Empty States */,
 				09A309EF2672A8B60048EEFC /* Buttons */,
 				09C8FD34266561320067A2B7 /* Image */,
 				09C8FD33266561200067A2B7 /* Cells */,
@@ -314,6 +325,7 @@
 				099EAFAA265964BE005656EC /* AccountView.swift in Sources */,
 				093B49A0267BD68B003D9F3A /* User.swift in Sources */,
 				09A309F12672A8D80048EEFC /* APButton.swift in Sources */,
+				093B49A3267FE328003D9F3A /* EmptyState.swift in Sources */,
 				099EAF9B26596355005656EC /* AppetizerTabView.swift in Sources */,
 				099EAFB2265A8902005656EC /* NetworkManager.swift in Sources */,
 				099EAFB6265BF4CD005656EC /* AppetizerListViewModel.swift in Sources */,

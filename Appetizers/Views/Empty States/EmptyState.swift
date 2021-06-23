@@ -33,14 +33,7 @@ struct EmptyState: View {
             }
             .offset(y: -50)
         }
-        
-        
-        
-        
-        
-        
-        
-        //tTest 
+       
     }
 }
 

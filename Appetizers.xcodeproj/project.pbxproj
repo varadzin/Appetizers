@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		093B49A0267BD68B003D9F3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B499F267BD68B003D9F3A /* User.swift */; };
 		093B49A3267FE328003D9F3A /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B49A2267FE328003D9F3A /* EmptyState.swift */; };
+		093B49A5268387A3003D9F3A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B49A4268387A3003D9F3A /* Order.swift */; };
 		0974327C2675F63C00BCE8A8 /* AccoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */; };
 		0974327E267622FE00BCE8A8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974327D267622FE00BCE8A8 /* String+Ext.swift */; };
 		099EAF9926596355005656EC /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EAF9826596355005656EC /* AppetizersApp.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		093B499F267BD68B003D9F3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		093B49A2267FE328003D9F3A /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		093B49A4268387A3003D9F3A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0974327B2675F63C00BCE8A8 /* AccoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutViewModel.swift; sourceTree = "<group>"; };
 		0974327D267622FE00BCE8A8 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		099EAF9526596355005656EC /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 			children = (
 				099EAFAD265A39D3005656EC /* Appetizer.swift */,
 				093B499F267BD68B003D9F3A /* User.swift */,
+				093B49A4268387A3003D9F3A /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				099EAFB4265A89D0005656EC /* APError.swift in Sources */,
 				09A309F32672AA000048EEFC /* XDismissButton.swift in Sources */,
 				099EAFBA265D669B005656EC /* LoadingView.swift in Sources */,
+				093B49A5268387A3003D9F3A /* Order.swift in Sources */,
 				0974327C2675F63C00BCE8A8 /* AccoutViewModel.swift in Sources */,
 				099EAFB0265A486B005656EC /* AppetizerListCell.swift in Sources */,
 				09C8FD252663D8120067A2B7 /* Color+Ext.swift in Sources */,

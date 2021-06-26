@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OrderView: View {
     
-    @State private var orderItems = MockData.orderItems
+    @EnvironmentObject var order: Order
     
     var body: some View {
         NavigationView {
@@ -17,7 +17,7 @@ struct OrderView: View {
                 VStack {
             
                 List {
-                    ForEach(orderItems) { appetizer in
+                    ForEach(order.items) { appetizer in
                         AppetizerListCell(appetizer: appetizer)
                     }
                     .onDelete(perform: deleteItems)
@@ -33,7 +33,7 @@ struct OrderView: View {
                 .padding(.bottom, 25)
             }
                 
-                if orderItems.isEmpty {
+                if order.items.isEmpty {
                     EmptyState(imageName: "empty-order",
                                message: "You have no Order")
                 }
@@ -45,7 +45,7 @@ struct OrderView: View {
     
     
     func deleteItems(at offsets: IndexSet) {
-        orderItems.remove(atOffsets: offsets)
+        order.items.remove(atOffsets: offsets)
     }
     
 }

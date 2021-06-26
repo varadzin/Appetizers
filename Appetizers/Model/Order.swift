@@ -10,19 +10,6 @@ import SwiftUI
 final class Order: ObservableObject {
     @Published var items: [Appetizer] = []
     
-    
-    
-    // kejgoeghrgho4ighirtg
-    
-    //\rgtrh
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
 }

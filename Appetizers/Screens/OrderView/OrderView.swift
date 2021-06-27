@@ -37,8 +37,7 @@ struct OrderView: View {
                     EmptyState(imageName: "empty-order",
                                message: "You have no Order")
                 }
-            }
-            
+            } 
             .navigationTitle("Orders")
         }
     }
